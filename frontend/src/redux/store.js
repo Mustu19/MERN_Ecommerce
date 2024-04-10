@@ -9,10 +9,6 @@ const store = configureStore({
         auth: authReducer,
     },
 
-    // preloadedState: {
-    //     favorites: initialFavorites,
-    // },
-
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(apiSlice.middleware),
     devTools: true,
