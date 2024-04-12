@@ -35,7 +35,6 @@ const updateCategory = asyncHandler(async (req, res) => {
     }
 
     category.name = name;
-
     const updatedCategory = await category.save();
     res.json(updatedCategory);
   } catch (error) {
